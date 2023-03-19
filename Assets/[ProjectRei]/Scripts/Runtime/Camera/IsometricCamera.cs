@@ -2,6 +2,7 @@ using UnityEngine;
 
 namespace GameCamera
 {
+    [RequireComponent(typeof(Camera))]
     [DisallowMultipleComponent]
     public sealed class IsometricCamera : MonoBehaviour
     {
@@ -57,6 +58,12 @@ namespace GameCamera
 
 
         #region MonoBehaviour Implementation
+        private void Reset()
+        {
+            if (m_camera == null)
+                m_camera = GetComponent<Camera>();
+        }
+
         private void FixedUpdate()
         {
             UpdateTransformation();
