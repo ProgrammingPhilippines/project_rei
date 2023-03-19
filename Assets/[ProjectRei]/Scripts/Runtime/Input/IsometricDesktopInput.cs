@@ -1,8 +1,9 @@
 using UnityEngine;
+using CharacterSystem;
 
 namespace GameInput
 {
-    public sealed class IsometricDesktopInput : IsometricPlayerInput
+    public sealed class IsometricDesktopInput : CharacterInput
     {
         #region Fields
         [SerializeField]
