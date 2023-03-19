@@ -1,9 +1,9 @@
 using UnityEngine;
 
-namespace GameInput
+namespace CharacterSystem
 {
     [DisallowMultipleComponent]
-    public abstract class IsometricPlayerInput : MonoBehaviour
+    public abstract class CharacterInput : MonoBehaviour
     {
         #region Fields
         [SerializeField]
