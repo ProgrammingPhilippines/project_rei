@@ -3,7 +3,7 @@ using CharacterSystem;
 
 namespace GameInput
 {
-    public abstract class BaseJoystickInput : CharacterInput
+    public abstract class GamepadInput : CharacterInput
     {
         #region Properties
         protected sealed override Vector2 movementDirection =>

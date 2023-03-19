@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace GameInput
 {
-    public sealed class JoystickInput : BaseJoystickInput
+    public sealed class HardwareGamepadInput : GamepadInput
     {
         #region Fields
         [SerializeField]
