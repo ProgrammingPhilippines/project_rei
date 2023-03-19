@@ -4,6 +4,7 @@ using UnityEngine;
 namespace CharacterSystem
 {
     [RequireComponent(typeof(Rigidbody))]
+    [DisallowMultipleComponent]
     public sealed class CharacterLocomotor : MonoBehaviour
     {
         #region Fields
