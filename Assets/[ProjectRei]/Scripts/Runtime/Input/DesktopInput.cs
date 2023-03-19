@@ -3,7 +3,7 @@ using CharacterSystem;
 
 namespace GameInput
 {
-    public sealed class IsometricDesktopInput : CharacterInput
+    public sealed class DesktopInput : CharacterInput
     {
         #region Fields
         [SerializeField]
