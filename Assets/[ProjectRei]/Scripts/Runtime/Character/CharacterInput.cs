@@ -1,5 +1,5 @@
+using System;
 using UnityEngine;
-
 namespace CharacterSystem
 {
     [DisallowMultipleComponent]
@@ -17,7 +17,8 @@ namespace CharacterSystem
 
 
         #region Event
-        public event System.Action Attacked;
+        public event Action Attacked;
+        public event Action Reloaded;
         #endregion
 
 
@@ -56,6 +57,9 @@ namespace CharacterSystem
 
         protected void InvokeAttackedEvent() =>
             Attacked?.Invoke();
+
+        protected void InvokeReloadedEvent() =>
+            Reloaded?.Invoke();
 
         private void UpdateHeading()
         {
