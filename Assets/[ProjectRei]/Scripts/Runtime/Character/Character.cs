@@ -67,7 +67,7 @@ namespace CharacterSystem
                 return;
 
             value = Mathf.Max(value, 0);
-            m_currentHitPoints = Mathf.Min(m_hitPoints + value, m_hitPoints);
+            m_currentHitPoints = Mathf.Min(m_currentHitPoints + value, m_hitPoints);
             Healed?.Invoke(value);
             HitPointsUpdated?.Invoke(m_currentHitPoints, m_hitPoints);
         }
