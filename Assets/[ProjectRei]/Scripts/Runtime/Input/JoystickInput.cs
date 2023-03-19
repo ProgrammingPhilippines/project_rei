@@ -7,10 +7,10 @@ namespace GameInput
     {
         #region Fields
         [SerializeField]
-        private StickInput m_movementInput = StickInput.Standard;
+        private StickControl m_movementInput = StickControl.Standard;
         
         [SerializeField]
-        private StickInput m_headingInput = StickInput.Standard;
+        private StickControl m_headingInput = StickControl.Standard;
         #endregion
 
 

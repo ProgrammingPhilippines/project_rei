@@ -12,7 +12,7 @@ namespace GameInput
         [Space]
 
         [SerializeField]
-        private StickInput m_movementInput = StickInput.Standard;
+        private StickControl m_movementInput = StickControl.Standard;
 
         private Vector2 m_faceDirection = Vector2.zero;
         #endregion

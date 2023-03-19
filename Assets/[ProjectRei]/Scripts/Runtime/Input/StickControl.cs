@@ -3,14 +3,14 @@ using UnityEngine;
 namespace GameInput
 {
     [System.Serializable]
-    public struct StickInput
+    public struct StickControl
     {
         #region Constructor
-        public StickInput(string horizontalAxis, string verticalAxis) =>
+        public StickControl(string horizontalAxis, string verticalAxis) =>
             (m_horizontalAxis, m_verticalAxis) = (horizontalAxis, verticalAxis);
         
-        public static StickInput Standard =>
-            new StickInput("Horizontal", "Vertical");
+        public static StickControl Standard =>
+            new StickControl("Horizontal", "Vertical");
         #endregion
 
 
