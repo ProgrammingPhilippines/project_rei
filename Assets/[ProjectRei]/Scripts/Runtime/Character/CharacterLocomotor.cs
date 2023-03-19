@@ -3,6 +3,7 @@ using UnityEngine;
 
 namespace CharacterSystem
 {
+    [RequireComponent(typeof(Rigidbody))]
     public sealed class CharacterLocomotor : MonoBehaviour
     {
         #region Fields
@@ -28,6 +29,12 @@ namespace CharacterSystem
 
 
         #region MonoBehaviour Implementation
+        private void Reset()
+        {
+            if (m_rigidbody == null)
+                m_rigidbody = GetComponent<Rigidbody>();
+        }
+
         private void Update() => UpdateHeading();
 
         private void FixedUpdate()
