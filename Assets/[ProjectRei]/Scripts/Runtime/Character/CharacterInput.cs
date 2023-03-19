@@ -16,6 +16,11 @@ namespace CharacterSystem
         #endregion
 
 
+        #region Event
+        public event System.Action Attacked;
+        #endregion
+
+
         #region Properties
         public Vector3 movement =>
             GetCameraYawRotation() *
@@ -48,6 +53,9 @@ namespace CharacterSystem
         #region Methods
         public void SetCamera(Camera camera) =>
             m_camera = camera;
+
+        protected void InvokeAttackedEvent() =>
+            Attacked?.Invoke();
 
         private void UpdateHeading()
         {
