@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace GameInput
+namespace GameInput.GamepadModule
 {
     public sealed class OnscreenGamepadInput : GamepadInput
     {
